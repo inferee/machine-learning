@@ -6,7 +6,7 @@ public class Layer {
 	public double[][] bias;
 	public double[][] weight;
 
-	public Layer(int nodes, int previous) {
+	public Layer(int previous, int nodes) {
 		this.nodes = nodes;
 		this.previous = previous;
 		bias = Matrix.initGuassian(1, nodes, 0, 1);

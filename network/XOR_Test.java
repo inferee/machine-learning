@@ -8,19 +8,19 @@ public class XOR_Test {
 
 	public XOR_Test(int cycles) {
 		layers = new Layer[2];
-		layers[0] = new Layer(3, 2);
-		layers[1] = new Layer(1, 3);
+		layers[0] = new Layer(2, 3);
+		layers[1] = new Layer(3, 1);
 		learningRate = 0.25;
 		double[][][] layerOutputs = new double[3][][];
 		double[][][] layerInputs = new double[2][][];
-//		 System.out.println("Layer 0 Bias");
-//		 Matrix.print(layers[0].bias);
-//		 System.out.println("Layer 0 Weight");
-//		 Matrix.print(layers[0].weight);
-//		 System.out.println("Layer 1 Bias");
-//		 Matrix.print(layers[1].bias);
-//		 System.out.println("Layer 1 Weight");
-//		 Matrix.print(layers[1].weight);
+		// System.out.println("Layer 0 Bias");
+		// Matrix.print(layers[0].bias);
+		// System.out.println("Layer 0 Weight");
+		// Matrix.print(layers[0].weight);
+		// System.out.println("Layer 1 Bias");
+		// Matrix.print(layers[1].bias);
+		// System.out.println("Layer 1 Weight");
+		// Matrix.print(layers[1].weight);
 		while (cycles-- > 0) {
 			for (int i = 0; i < 4; i++) {
 				layerOutputs[0] = input[i];
@@ -34,14 +34,14 @@ public class XOR_Test {
 				System.out.println(layerOutputs[2][0][0] + " " + goal[i]);
 			}
 		}
-//		 System.out.println("Layer 0 Bias");
-//		 Matrix.print(layers[0].bias);
-//		 System.out.println("Layer 0 Weight");
-//		 Matrix.print(layers[0].weight);
-//		 System.out.println("Layer 1 Bias");
-//		 Matrix.print(layers[1].bias);
-//		 System.out.println("Layer 1 Weight");
-//		 Matrix.print(layers[1].weight);
+		// System.out.println("Layer 0 Bias");
+		// Matrix.print(layers[0].bias);
+		// System.out.println("Layer 0 Weight");
+		// Matrix.print(layers[0].weight);
+		// System.out.println("Layer 1 Bias");
+		// Matrix.print(layers[1].bias);
+		// System.out.println("Layer 1 Weight");
+		// Matrix.print(layers[1].weight);
 	}
 
 	public static void main(String[] args) {
